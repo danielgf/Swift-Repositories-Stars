@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
+        
+        let repositoriesController = RepositoryListController(collectionViewLayout: UICollectionViewFlowLayout())
+        window?.rootViewController = UINavigationController(rootViewController: repositoriesController)
         return true
     }
 
