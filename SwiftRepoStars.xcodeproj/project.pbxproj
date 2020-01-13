@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		2969E078903610AEAA85414F /* Pods_SwiftRepoStars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F183037FCC047F91C2DC03 /* Pods_SwiftRepoStars.framework */; };
 		596709B3CA2EB071513FF110 /* Pods_SwiftRepoStarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD12CA22EB3265AFF739140 /* Pods_SwiftRepoStarsTests.framework */; };
 		9C5EA64623CC92DA004FFA2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA64523CC92DA004FFA2F /* AppDelegate.swift */; };
-		9C5EA64823CC92DA004FFA2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA64723CC92DA004FFA2F /* SceneDelegate.swift */; };
 		9C5EA64A23CC92DA004FFA2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA64923CC92DA004FFA2F /* ViewController.swift */; };
 		9C5EA64D23CC92DA004FFA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5EA64B23CC92DA004FFA2F /* Main.storyboard */; };
 		9C5EA64F23CC92DA004FFA2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5EA64E23CC92DA004FFA2F /* Assets.xcassets */; };
@@ -46,7 +45,6 @@
 		9AD12CA22EB3265AFF739140 /* Pods_SwiftRepoStarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRepoStarsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5EA64223CC92DA004FFA2F /* SwiftRepoStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRepoStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5EA64523CC92DA004FFA2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C5EA64723CC92DA004FFA2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9C5EA64923CC92DA004FFA2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C5EA64C23CC92DA004FFA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C5EA64E23CC92DA004FFA2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				C2A1F19D5D8897CE75F5893A /* Pods-SwiftRepoStarsTests.debug.xcconfig */,
 				57A2D6FDA21D59FF86B4E9B4 /* Pods-SwiftRepoStarsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -141,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				9C5EA64523CC92DA004FFA2F /* AppDelegate.swift */,
-				9C5EA64723CC92DA004FFA2F /* SceneDelegate.swift */,
 				9C5EA64923CC92DA004FFA2F /* ViewController.swift */,
 				9C5EA64B23CC92DA004FFA2F /* Main.storyboard */,
 				9C5EA64E23CC92DA004FFA2F /* Assets.xcassets */,
@@ -410,7 +406,6 @@
 			files = (
 				9C5EA64A23CC92DA004FFA2F /* ViewController.swift in Sources */,
 				9C5EA64623CC92DA004FFA2F /* AppDelegate.swift in Sources */,
-				9C5EA64823CC92DA004FFA2F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -569,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -587,6 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67PY6572TK;
 				INFOPLIST_FILE = SwiftRepoStars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +602,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67PY6572TK;
 				INFOPLIST_FILE = SwiftRepoStars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
