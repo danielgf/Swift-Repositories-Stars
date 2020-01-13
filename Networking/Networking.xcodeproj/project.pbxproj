@@ -20,6 +20,7 @@
 		9C5EA73423CCB7C1004FFA2F /* OwnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA73323CCB7C1004FFA2F /* OwnerViewModel.swift */; };
 		9C5EA73623CCB7E0004FFA2F /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA73523CCB7E0004FFA2F /* RepositoryListViewModel.swift */; };
 		9C5EA73823CCB7EA004FFA2F /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA73723CCB7EA004FFA2F /* RepositoryViewModel.swift */; };
+		9C5EA74D23CD083A004FFA2F /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA74C23CD083A004FFA2F /* RepositoryListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9C5EA73323CCB7C1004FFA2F /* OwnerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewModel.swift; sourceTree = "<group>"; };
 		9C5EA73523CCB7E0004FFA2F /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
 		9C5EA73723CCB7EA004FFA2F /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
+		9C5EA74C23CD083A004FFA2F /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
 		D5AD313CECEED07F59FE2F30 /* Pods-Networking-NetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking-NetworkingTests.release.xcconfig"; path = "Target Support Files/Pods-Networking-NetworkingTests/Pods-Networking-NetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		EEC4F9231F10F3A526E92407 /* Pods-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.debug.xcconfig"; path = "Target Support Files/Pods-Networking/Pods-Networking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 			children = (
 				9C5EA6C723CC9FB9004FFA2F /* NetworkingTests.swift */,
 				9C5EA6C923CC9FB9004FFA2F /* Info.plist */,
+				9C5EA74C23CD083A004FFA2F /* RepositoryListViewModel.swift */,
 			);
 			path = NetworkingTests;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5EA74D23CD083A004FFA2F /* RepositoryListViewModel.swift in Sources */,
 				9C5EA6C823CC9FB9004FFA2F /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
