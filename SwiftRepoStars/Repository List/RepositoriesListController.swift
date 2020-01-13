@@ -14,17 +14,27 @@ class RepositoriesListController: UITableViewController {
     // MARK: - Properties
     var viewModel = RepositoryListViewModel()
     var page = 1
+    var activityIndicator = UIActivityIndicatorView(style: .gray)
     
     // MARK: - View Life cicle
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "RepositoriesListCell", bundle: nil), forCellReuseIdentifier: "cell")
+        setupActivityIndicator()
+        registerCell()
         requestRepoistories(for: page)
+        setupRefreshController()
         viewModel.delegate = self
-        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
     }
     
     // MARK: - Internal Functions
+    
+    private func setupRefreshController() {
+        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
+    }
+    
+    private func registerCell() {
+        tableView.register(UINib(nibName: "RepositoriesListCell", bundle: nil), forCellReuseIdentifier: "cell")
+    }
     
     @objc private func refresh() {
         requestRepoistories(for: page)
@@ -32,7 +42,17 @@ class RepositoriesListController: UITableViewController {
     }
     
     private func requestRepoistories(for page: Int) {
+        activityIndicator.startAnimating()
         viewModel.getRepositories(for: page)
+    }
+    
+    private func setupActivityIndicator() {
+        activityIndicator.frame = CGRect(x: 100, y: 100,
+                                         width: view.bounds.width / 2,
+                                         height: view.bounds.height / 2)
+        activityIndicator.color = .black
+        
+        view.addSubview(activityIndicator)
     }
 
     // MARK: - Table view data source
@@ -60,11 +80,11 @@ class RepositoriesListController: UITableViewController {
 //Extension to conform RepositoryListViewModelAPI protocol
 extension RepositoriesListController: RepositoryListViewModelAPI {
     func requestResult(error: Error?) {
-        guard let error = error else {
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-            return }
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+            self.tableView.reloadData()
+        }
+        guard let error = error else { return }
         
         let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
         
