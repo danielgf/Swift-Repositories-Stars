@@ -16,6 +16,10 @@
 		9C5EA72523CCADCD004FFA2F /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA71423CCADCD004FFA2F /* Payload.swift */; };
 		9C5EA72623CCADCD004FFA2F /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA71523CCADCD004FFA2F /* Owner.swift */; };
 		9C5EA72E23CCB47C004FFA2F /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA72D23CCB47C004FFA2F /* NetworkingManager.swift */; };
+		9C5EA73223CCB7A5004FFA2F /* PayloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA73123CCB7A5004FFA2F /* PayloadViewModel.swift */; };
+		9C5EA73423CCB7C1004FFA2F /* OwnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA73323CCB7C1004FFA2F /* OwnerViewModel.swift */; };
+		9C5EA73623CCB7E0004FFA2F /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA73523CCB7E0004FFA2F /* RepositoryListViewModel.swift */; };
+		9C5EA73823CCB7EA004FFA2F /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA73723CCB7EA004FFA2F /* RepositoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		9C5EA71423CCADCD004FFA2F /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		9C5EA71523CCADCD004FFA2F /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		9C5EA72D23CCB47C004FFA2F /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		9C5EA73123CCB7A5004FFA2F /* PayloadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadViewModel.swift; sourceTree = "<group>"; };
+		9C5EA73323CCB7C1004FFA2F /* OwnerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewModel.swift; sourceTree = "<group>"; };
+		9C5EA73523CCB7E0004FFA2F /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
+		9C5EA73723CCB7EA004FFA2F /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		D5AD313CECEED07F59FE2F30 /* Pods-Networking-NetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking-NetworkingTests.release.xcconfig"; path = "Target Support Files/Pods-Networking-NetworkingTests/Pods-Networking-NetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		EEC4F9231F10F3A526E92407 /* Pods-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.debug.xcconfig"; path = "Target Support Files/Pods-Networking/Pods-Networking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +111,7 @@
 		9C5EA6BB23CC9FB9004FFA2F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				9C5EA73023CCB781004FFA2F /* ViewModel */,
 				9C5EA71223CCADCD004FFA2F /* Model */,
 				9C5EA72D23CCB47C004FFA2F /* NetworkingManager.swift */,
 				9C5EA6BC23CC9FB9004FFA2F /* Networking.h */,
@@ -128,6 +137,17 @@
 				9C5EA71523CCADCD004FFA2F /* Owner.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9C5EA73023CCB781004FFA2F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C5EA73123CCB7A5004FFA2F /* PayloadViewModel.swift */,
+				9C5EA73323CCB7C1004FFA2F /* OwnerViewModel.swift */,
+				9C5EA73523CCB7E0004FFA2F /* RepositoryListViewModel.swift */,
+				9C5EA73723CCB7EA004FFA2F /* RepositoryViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		BEC64445E653EFC548030870 /* Frameworks */ = {
@@ -298,10 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5EA73823CCB7EA004FFA2F /* RepositoryViewModel.swift in Sources */,
+				9C5EA73423CCB7C1004FFA2F /* OwnerViewModel.swift in Sources */,
 				9C5EA72E23CCB47C004FFA2F /* NetworkingManager.swift in Sources */,
 				9C5EA72623CCADCD004FFA2F /* Owner.swift in Sources */,
 				9C5EA72523CCADCD004FFA2F /* Payload.swift in Sources */,
 				9C5EA72423CCADCD004FFA2F /* Repository.swift in Sources */,
+				9C5EA73223CCB7A5004FFA2F /* PayloadViewModel.swift in Sources */,
+				9C5EA73623CCB7E0004FFA2F /* RepositoryListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

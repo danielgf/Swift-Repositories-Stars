@@ -14,7 +14,6 @@
 		9C5EA69623CC9A44004FFA2F /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5EA68823CC9A44004FFA2F /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C5EA6A523CC9ADA004FFA2F /* TextViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA69F23CC9ADA004FFA2F /* TextViewComponent.swift */; };
 		9C5EA6A623CC9ADA004FFA2F /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA6A023CC9ADA004FFA2F /* UIView+Anchors.swift */; };
-		9C5EA6A723CC9ADA004FFA2F /* RepositorieCellComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA6A123CC9ADA004FFA2F /* RepositorieCellComponent.swift */; };
 		9C5EA6A823CC9ADA004FFA2F /* LabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA6A223CC9ADA004FFA2F /* LabelComponent.swift */; };
 		9C5EA6A923CC9ADA004FFA2F /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA6A323CC9ADA004FFA2F /* ImageComponent.swift */; };
 		9C5EA6AA23CC9ADA004FFA2F /* UIViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EA6A423CC9ADA004FFA2F /* UIViewComponent.swift */; };
@@ -44,7 +43,6 @@
 		9C5EA69523CC9A44004FFA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C5EA69F23CC9ADA004FFA2F /* TextViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewComponent.swift; sourceTree = "<group>"; };
 		9C5EA6A023CC9ADA004FFA2F /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
-		9C5EA6A123CC9ADA004FFA2F /* RepositorieCellComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorieCellComponent.swift; sourceTree = "<group>"; };
 		9C5EA6A223CC9ADA004FFA2F /* LabelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelComponent.swift; sourceTree = "<group>"; };
 		9C5EA6A323CC9ADA004FFA2F /* ImageComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageComponent.swift; sourceTree = "<group>"; };
 		9C5EA6A423CC9ADA004FFA2F /* UIViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewComponent.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 			children = (
 				9C5EA6A323CC9ADA004FFA2F /* ImageComponent.swift */,
 				9C5EA6A223CC9ADA004FFA2F /* LabelComponent.swift */,
-				9C5EA6A123CC9ADA004FFA2F /* RepositorieCellComponent.swift */,
 				9C5EA69F23CC9ADA004FFA2F /* TextViewComponent.swift */,
 				9C5EA6A023CC9ADA004FFA2F /* UIView+Anchors.swift */,
 				9C5EA6A423CC9ADA004FFA2F /* UIViewComponent.swift */,
@@ -296,7 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C5EA6A723CC9ADA004FFA2F /* RepositorieCellComponent.swift in Sources */,
 				9C5EA6A523CC9ADA004FFA2F /* TextViewComponent.swift in Sources */,
 				9C5EA6A823CC9ADA004FFA2F /* LabelComponent.swift in Sources */,
 				9C5EA6A923CC9ADA004FFA2F /* ImageComponent.swift in Sources */,

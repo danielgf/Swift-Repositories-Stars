@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import Networking
 
 private let reuseIdentifier = "Cell"
 
 class RepositoryListController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    var viewModel = RepositoryListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
         setupNavigationController()
+        setupViewModelDelegate()
+        requestRepositories(for: 1)
     }
     
     // MARK: - Internal Functions
@@ -28,11 +33,19 @@ class RepositoryListController: UICollectionViewController, UICollectionViewDele
         title = "Repositories"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    private func setupViewModelDelegate() {
+        viewModel.delegate = self
+    }
+    
+    private func requestRepositories(for page: Int) {
+        viewModel.getRepositories(for: page)
+    }
 
     // MARK: - UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfItems
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -42,5 +55,22 @@ class RepositoryListController: UICollectionViewController, UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 150)
+    }
+}
+
+extension RepositoryListController: RepositoryListViewModelAPI {
+    func requestResult(error: Error?) {
+        guard let error = error else {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+            return }
+        
+        let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+        
     }
 }
