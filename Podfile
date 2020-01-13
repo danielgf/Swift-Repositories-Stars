@@ -21,10 +21,20 @@ target 'SwiftRepoStars' do
   end
 end
 
+# Frameworks
+
 target 'UIComponents' do
   project 'UIComponents/UIComponents.xcodeproj'
   
   target 'UIComponentsTests' do
     project 'UIComponents/UIComponents.xcodeproj'
+  end
+end
+
+target 'Networking' do
+  project 'Networking/Networking.xcodeproj'
+  
+  target 'NetworkingTests' do
+    project 'Networking/Networking.xcodeproj'
   end
 end
