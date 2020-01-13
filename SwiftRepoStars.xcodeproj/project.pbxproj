@@ -676,7 +676,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C2A1F19D5D8897CE75F5893A /* Pods-SwiftRepoStarsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67PY6572TK;
@@ -699,7 +699,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57A2D6FDA21D59FF86B4E9B4 /* Pods-SwiftRepoStarsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67PY6572TK;
@@ -722,7 +722,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60F79827E2E999A1B079F8BA /* Pods-SwiftRepoStars-SwiftRepoStarsUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67PY6572TK;
 				INFOPLIST_FILE = SwiftRepoStarsUITests/Info.plist;
@@ -743,7 +743,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C75F82557AAC0829B3F2B1C4 /* Pods-SwiftRepoStars-SwiftRepoStarsUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67PY6572TK;
 				INFOPLIST_FILE = SwiftRepoStarsUITests/Info.plist;
