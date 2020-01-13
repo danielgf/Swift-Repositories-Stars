@@ -19,5 +19,12 @@ target 'SwiftRepoStars' do
   target 'SwiftRepoStarsUITests' do
     # Pods for testing
   end
+end
 
+target 'UIComponents' do
+  project 'UIComponents/UIComponents.xcodeproj'
+  
+  target 'UIComponentsTests' do
+    project 'UIComponents/UIComponents.xcodeproj'
+  end
 end
